@@ -3,13 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /* COMMON */
 
 body {
     font-family: 'Montserrat', sans-serif;
     width: 80%;
     margin: auto;
+    background-color: rgb(231, 231, 231);
+    color: black;
+}
+.dark-mode {
+    background-color: rgb(20, 20, 20);
+    color: #fff;
 }
 ul {
     list-style: none;
@@ -25,18 +30,24 @@ header {
     grid-template-rows: auto;
     margin: 20px 0;
 }
-
 .portfolio-owner {
     font-size: 1.5rem;
     font-weight: bolder;
 }
-
 header ul{
     grid-column-end: 4;
 }
-
 header li {
     margin: 0 15px;
+    font-weight: 600;
+}
+header li:hover {
+    color: #0F62FE;
+}
+header button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
 }
 
 
