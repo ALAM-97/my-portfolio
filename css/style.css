@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* COMMON */
 
 body {
@@ -22,6 +23,7 @@ ul {
 li {
     display: inline-block;
 }
+
 /* HEADER */
 
 header {
@@ -44,11 +46,92 @@ header li {
 header li:hover {
     color: #0F62FE;
 }
-header button {
-    background-color: transparent;
-    border: none;
+header ul:last-child {
     font-size: 1.2rem;
 }
+
+/* MAIN */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr;
+    grid-template-rows: auto;
+    width: 100%;
+    margin-top: 100px;
+}
+.hero-left {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-areas: 
+        "github"
+        "linkedin"
+        "print";
+}
+.hero i {
+    font-size: 1.5rem;
+    color: #0F62FE;
+}
+.hero i:hover {
+    font-size: 1.7rem;
+    opacity: .6;
+}
+.github-link {
+    grid-area: github;
+    justify-self: center;
+    align-self: end;
+}
+.linkedin-link {
+    grid-area: linkedin;
+    place-self: center;
+}
+.fa-print {
+    grid-area: print;
+    justify-self: center;
+}
+.hero-center {
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    padding-left: 90px;
+}
+.hero-center h1 {
+    font-size: 2.5rem;
+    align-self: end;
+}
+.hero-center h5 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    align-self: center;
+}
+.hero-center p {
+    font-size: 1.5rem;
+    align-self: start;
+}
+.hero-center a {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    font-weight: 600;
+    background-color: #0F62FE;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    margin-right: auto;
+    border-radius: 15px;
+    border: none;
+    align-self: start;
+    justify-self: start;
+}
+.hero-center a:hover {
+    color: rgb(231, 231, 231);
+}
+.hero-right {
+    display: grid;
+    justify-items: center;
+}
+.hero-right img {
+    width: 75%;
+    text-align: right;
+}
+
 
 
 
