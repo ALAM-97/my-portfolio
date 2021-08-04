@@ -11,7 +11,7 @@ body {
     width: 80%;
     margin: auto;
     background-color: rgb(231, 231, 231);
-    color: black;
+    color: rgb(20, 20, 20);
 }
 .dark-mode {
     background-color: rgb(20, 20, 20);
@@ -28,16 +28,25 @@ li {
 
 header {
     display: grid;
-    grid-template-columns: 2fr 4fr;
+    grid-template-columns: 40% 60%;
     grid-template-rows: auto;
     margin: 20px 0;
+    align-items: center;
+}
+.logo {
+    position: relative;
+}
+header img {
+    width: 5rem;
 }
 .portfolio-owner {
+    position: absolute;
     font-size: 1.5rem;
-    font-weight: bolder;
+    left: 25px;
+    top: 12px;
 }
 header ul{
-    grid-column-end: 4;
+    justify-self: end;
 }
 header li {
     margin: 0 15px;
