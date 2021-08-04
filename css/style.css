@@ -8,10 +8,11 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    width: 80%;
+    width: 75%;
     margin: auto;
     background-color: rgb(231, 231, 231);
     color: rgb(20, 20, 20);
+    margin-bottom: 100px;  /* debug */
 }
 .dark-mode {
     background-color: rgb(20, 20, 20);
@@ -22,6 +23,30 @@ ul {
 }
 li {
     display: inline-block;
+}
+section {
+    margin-top: 70px;
+}
+.btn {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    font-weight: 600;
+    background-color: #0F62FE;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+}
+.section-intro {
+    text-align: center;
+    margin-bottom: 90px;
+}
+.section-intro h3 {
+    font-size: 2rem;
+}
+.section-intro h5 {
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 
 /* HEADER */
@@ -52,6 +77,7 @@ header ul{
 header li {
     margin: 0 10px;
     font-weight: 600;
+    cursor: pointer;
 }
 header li:hover {
     color: #0F62FE;
@@ -117,15 +143,7 @@ header ul:last-child {
     align-self: start;
 }
 .hero-center a {
-    text-decoration: none;
-    color: rgb(20, 20, 20);
-    font-weight: 600;
-    background-color: #0F62FE;
-    font-size: 1.2rem;
-    padding: 10px 15px;
     margin-right: auto;
-    border-radius: 15px;
-    border: none;
     align-self: start;
     justify-self: start;
     margin: 20px 0;
@@ -141,3 +159,46 @@ header ul:last-child {
 .hero-right img {
     width: 75%;
 }
+
+/* ABOUT ME */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 40px;
+    grid-template-rows: auto;
+}
+.about-content-right {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 70px;
+}
+.about-numbers {
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+}
+.about-content img {
+    justify-self: center;
+    align-self: start;
+    width: 70%;
+    border-radius: 50px;
+}
+.about-content p {
+    font-size: 1.2rem;
+}
+.about-numbers strong {
+    font-size: 1.7rem;
+}
+.about-numbers p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+.exp {
+    text-align: center;
+}
+.about-content .btn {
+    margin: 0 auto;
+    align-self: end;
+}
+
