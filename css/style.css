@@ -67,7 +67,7 @@ header ul:last-child {
     grid-template-columns: 1fr 6fr 6fr;
     grid-template-rows: auto;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
     column-gap: 70px;
 }
 .hero-left {
@@ -84,7 +84,6 @@ header ul:last-child {
     color: #0F62FE;
 }
 .hero i:hover {
-    font-size: 1.7rem;
     opacity: .6;
 }
 .github-link {
