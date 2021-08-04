@@ -34,6 +34,7 @@ header {
     align-items: center;
 }
 .logo {
+    width: 100%;
     position: relative;
 }
 header img {
@@ -49,7 +50,7 @@ header ul{
     justify-self: end;
 }
 header li {
-    margin: 0 15px;
+    margin: 0 10px;
     font-weight: 600;
 }
 header li:hover {
@@ -138,9 +139,4 @@ header ul:last-child {
 }
 .hero-right img {
     width: 75%;
-    text-align: right;
 }
-
-
-
-
