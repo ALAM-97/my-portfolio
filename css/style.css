@@ -68,6 +68,7 @@ header ul:last-child {
     grid-template-rows: auto;
     width: 100%;
     margin-top: 100px;
+    column-gap: 70px;
 }
 .hero-left {
     display: grid;
@@ -102,7 +103,6 @@ header ul:last-child {
 .hero-center {
     display: grid;
     grid-template-rows: 2fr 1fr 2fr;
-    padding-left: 90px;
 }
 .hero-center h1 {
     font-size: 2.5rem;
@@ -129,12 +129,14 @@ header ul:last-child {
     border: none;
     align-self: start;
     justify-self: start;
+    margin: 20px 0;
 }
 .hero-center a:hover {
     color: rgb(231, 231, 231);
 }
 .hero-right {
     display: grid;
+    align-items: center;
     justify-items: center;
 }
 .hero-right img {
