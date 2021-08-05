@@ -53,10 +53,17 @@
     .about-numbers p {
         font-size: .9rem;
     }
+    /* SKILLS */
+    .accordion-link {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 1220px) {
-    /* HEADER */
+    /* COMMON */
+    section {
+        margin-top: 40px;
+    }    /* HEADER */
      header {
         grid-template-columns: 100%;
     }
@@ -84,9 +91,9 @@
         text-align: center;
         margin-top: 30px;
     }
-    .hero-center a {
+    .hero-center .btn {
     font-size: .9rem;
-}
+    }
     /* HERO */
     .hero {
         margin-top: 35px;
@@ -113,6 +120,22 @@
     }
     .about-numbers p {
         font-size: .9rem;
+    }
+    .about-content .btn {
+        font-size: .9rem;
+    }
+    /* SKILLS */
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: minmax() 1fr;
+        row-gap: 5px
+    }
+    .design {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 0 auto;
     }
 }
 
@@ -178,23 +201,18 @@
     .hero-center p {
         text-align: center;
     }
-    .hero-center a {
-        font-size: 0.9rem;
+    .hero-center .btn {
         margin: 15px auto;
-
     }
     .hero-right img {
         width: 90%;
-        margin: 35px auto 20px auto;
+        margin: 35px auto 0 auto;
     }
     /* ABOUT ME */
     .about-content-right {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 2fr 60px 50px;
-    }
-    .about-content .btn {
-        font-size: .9rem;
     }
     .about-content img {
         width: 100%;
@@ -209,9 +227,33 @@
     .about-numbers p {
         font-size: .7rem;
     }
+    /* SKILLS */
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax() minmax() minmax();
+        row-gap: 5px;
+        column-gap: 0;
+    }
+    .front,
+    .back {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .accordion-link {
+        font-size: 1.15rem;
+    }
+    .stats {
+        font-size: .9rem;
+    }
 }
 
 @media screen and (max-width: 420px) {
+    /* COMMON */
+    body {
+        width: 90%;
+    }
     /* HEADER */
     .logo {
         grid-template-columns: 1fr 4fr 1fr;
@@ -267,6 +309,9 @@
         width: 100%;
         border-radius: 20px;
     }
+    .about-content .btn {
+        padding: 10px 25px;
+    }
     .about-content p {
         font-size: .8rem;
     }
@@ -275,5 +320,9 @@
     }
     .about-numbers p {
         font-size: .6rem;
+    }
+    /* SKILLS */
+    .accordion-link {
+        font-size: 1rem;
     }
 }
