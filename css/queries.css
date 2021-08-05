@@ -55,7 +55,7 @@
     }
     /* SKILLS */
     .accordion-link {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 
@@ -140,6 +140,10 @@
 }
 
 @media screen and (max-width: 830px) {
+    /* COMMON */
+    body {
+        width: 90%;
+    }
     /* HEADER */
     header {
         grid-template-columns: 100%;
@@ -235,6 +239,9 @@
         row-gap: 5px;
         column-gap: 0;
     }
+    .accordion-link {
+        font-size: .8rem;
+    }
     .front,
     .back {
         width: 100%;
@@ -250,10 +257,6 @@
 }
 
 @media screen and (max-width: 420px) {
-    /* COMMON */
-    body {
-        width: 90%;
-    }
     /* HEADER */
     .logo {
         grid-template-columns: 1fr 4fr 1fr;
@@ -323,6 +326,13 @@
     }
     /* SKILLS */
     .accordion-link {
-        font-size: 1rem;
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    /* SKILLS */
+    .accordion-link {
+        font-size: .7rem;
     }
 }
