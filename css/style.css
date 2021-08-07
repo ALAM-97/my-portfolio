@@ -311,6 +311,9 @@ header ul:last-child {
 #tab-lavoro {
     display: none;
 } 
+#lavoro-active {
+    opacity: .5;
+}
 .elenco-esperienze-istruzione,
 .elenco-esperienze-lavoro {
     display: grid;
