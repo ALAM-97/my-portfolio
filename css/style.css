@@ -289,13 +289,10 @@ header ul:last-child {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    column-gap: 25px;
+    column-gap: 50px;
 }
 .istruzione {
     justify-self: end;
-}
-.lavoro {
-    margin-left: 25px;
 }
 .istruzione,
 .lavoro {
@@ -373,5 +370,5 @@ p.data {
 }
 .tabella-lavoro-left {
     text-align: right;
-    padding-top: 13px;
+    padding-top: 14px;
 }
