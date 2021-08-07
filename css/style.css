@@ -272,6 +272,7 @@ header ul:last-child {
 .perc-15 {width: 15%;}
 .perc-60 {width: 60%;}
 .perc-45 {width: 45%;}
+.perc-85 {width: 85%;}
 .accordion-item:target .skills-stats {
     max-height: 20rem;
 }
@@ -280,4 +281,97 @@ header ul:last-child {
 }
 .accordion-item:target .accordion-link .fa-angle-up {
     display: block;
+}
+
+/* ESPERIENZE */
+
+.tabella-esperienze {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 25px;
+}
+.istruzione {
+    justify-self: end;
+}
+.lavoro {
+    margin-left: 25px;
+}
+.istruzione,
+.lavoro {
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #0F62FE;
+    font-weight: 500;
+}
+.istruzione:hover,
+.lavoro:hover {
+    opacity: .6;
+}
+#tab-istruzione {
+    display: block;
+}
+#tab-lavoro {
+    display: none;
+} 
+.elenco-esperienze-istruzione,
+.elenco-esperienze-lavoro {
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 50px;
+    column-gap: 15px;
+}
+
+/* tabella istruzione */
+.tabella-istruzione-left {
+    text-align: right;
+}
+.esperienze h6 {
+    font-size: 1.2rem;
+}
+.esperienze p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+p.data {
+    font-size: .7rem;
+}
+.circle,
+.circle-2 {
+    width: 15px;
+    height: 15px;
+    background-color: #0F62FE;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 4px;
+}
+.circle-2 {
+    margin: 0px auto;
+}
+.line {
+    width: 3px;
+    height: 100%;
+    background-color: #0F62FE;
+    margin: 0 auto;
+}
+.tabella-istruzione-right {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    padding-top: 15px;
+}
+
+/* tabella-lavoro */
+.tabella-lavoro-right {
+    text-align: left;
+    grid-column-start: 3;
+}
+.tabella-lavoro-center {
+    order: -1;
+    grid-column-start: 2;
+}
+.tabella-lavoro-left {
+    text-align: right;
+    padding-top: 13px;
 }
