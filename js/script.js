@@ -20,89 +20,32 @@ function mostraLavoro() {
 }
 
 // PORTFOLIO
-// var carouselSlide = document.querySelector('.carousel-slide');
-// var carouselImages = document.querySelectorAll('.carousel-slide img');
 
-// //buttons
-// var prevBtn = document.querySelector('#prevBtn');
-// var nextBtn = document.querySelector('#nextBtn');
+var slideIndex = 1;
+showSlides(slideIndex);
 
-// //counter
-// let counter = 1;
-// var size = carouselImages[0].clientWidth;
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
-// carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-// //buttons listeners
-
-// nextBtn.addEventListener('click',()=> {
-//     if (counter >= carouselImages.lenght) return;
-//     carouselSlide.style.transition = "transform 0.4s ease-in-out";
-//     counter++;
-//     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-// })
-
-// prevBtn.addEventListener('click', () => {
-//     if (counter <= 0) return;
-//     carouselSlide.style.transition = "transform 0.4s ease-in-out";
-//     counter--;
-//     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-// })
-
-//  carouselSlide.addEventListener('transitionend', () => {
-//     if (sliderImages[counter].id === 'lastClone') {
-//         slider.style.transition = 'none';
-//         counter = sliderImages.length - 2;
-//         slider.style.transform = 'translateX(' + (`${-width * counter}`) + 'px)';
-//     }
-//     if (sliderImages[counter].id === 'firstClone') {
-//         slider.style.transition = 'none';
-//         counter = sliderImages.length - counter;
-//         slider.style.transform = 'translateX(' + (`${-width * counter}`) + 'px)';
-//     }
-//  });
-const container = document.querySelector('.slider__container');
-const slider = container.querySelector('.slider__container__sliders');
-const sliderImages = container.querySelectorAll('.slider__container__sliders img');
-const leftBtn = document.querySelector('.leftBtn');
-const rightBtn = document.querySelector('.rightBtn');
-let counter = 1;
-const width = sliderImages[0].clientWidth;
-
-
-slider.style.transform = 'translateX(' + (-width * counter) + 'px)';
-
-rightBtn.addEventListener('click', () => {
-    if (counter >= sliderImages.length - 1) return;
-    slider.style.transition = 'transform 0.4s ease-in-out';
-    counter++;
-    console.log(counter);
-    slider.style.transform = 'translateX(' + (-width * counter) + 'px)';
-});
-
-leftBtn.addEventListener('click', () => {
-    if (counter <= 0) return;
-    slider.style.transition = 'transform 0.4s ease-in-out';
-    counter--;
-    console.log(counter);
-    slider.style.transform = 'translateX(' + (`${-width * counter}`) + 'px)';
-});
-
-slider.addEventListener('transitionend', () => {
-
-    if (sliderImages[counter].id === 'lastClone') {
-        slider.style.transition = 'none';
-        counter = sliderImages.length - 2;
-        console.log(counter);
-        slider.style.transform = 'translateX(' + (`${-width * counter}`) + 'px)';
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-    if (sliderImages[counter].id === 'firstClone') {
-        slider.style.transition = 'none';
-        counter = sliderImages.length - counter;
-        console.log(counter);
-        slider.style.transform = 'translateX(' + (`${-width * counter}`) + 'px)';
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
     }
-});
-
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
 
 
