@@ -137,6 +137,10 @@
         grid-column-end: 3;
         margin: 0 auto;
     }
+    /* PORTFOLIO */
+    .text a {
+        font-size: 1.2rem; 
+    }
 }
 
 @media screen and (max-width: 830px) {
@@ -254,6 +258,9 @@
     .stats {
         font-size: .9rem;
     }
+    .text a {
+        font-size: .9rem; 
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -328,12 +335,19 @@
     .accordion-link {
         font-size: .9rem;
     }
+    /* PORTFOLIO */
+    .text a {
+        font-size: .7rem; 
+    }
 }
 
 @media screen and (max-width: 360px) {
     /* SKILLS */
     .accordion-link {
         font-size: .7rem;
+    }
+    .text a {
+        font-size: .5rem; 
     }
 }
 
