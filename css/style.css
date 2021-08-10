@@ -481,3 +481,60 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
+/* CONTACT ME */
+.contact-me {
+    display: grid;
+    grid-template-columns: 1fr 50px 2fr;
+    column-gap: 30px;
+}
+.contact-form {
+    display: grid;
+    grid-column-start: 3;
+    justify-items: end;
+}
+.my-contacts h5 {
+    font-size: 1.5rem;
+    color: #0F62FE;
+}
+.my-contacts p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.my-contacts p>i {
+    font-size: .8rem;
+    margin-bottom: 3px;
+    vertical-align: middle;
+}
+.contact-form input {
+    padding: 5px 10px 5px 5px;
+    border: none;
+    border-bottom: 3px solid #0F62FE;
+    width: 80%;
+    margin-top: 3px;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    background-color: rgb(231, 231, 231);
+}
+.contact-form input:focus {
+    outline: transparent;
+}
+textarea {
+    height: 150px;
+    padding: 5px 10px 5px 5px;
+    border: none;
+    border-bottom: 3px solid #0F62FE;
+    width: 80%;
+    margin-top: 3px;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    background-color: rgb(231, 231, 231);
+    font-family: 'Montserrat', sans-serif;
+    color: #757575;
+    font-weight: 500;
+}
+.contact-form .btn {
+    grid-column-start: 1;
+}
+
+
