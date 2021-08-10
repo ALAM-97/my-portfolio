@@ -484,15 +484,16 @@ img {vertical-align: middle;}
 /* CONTACT ME */
 .contact-me {
     display: grid;
-    grid-template-columns: 1fr 50px 2fr;
-    column-gap: 30px;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 80px;
 }
 .contact-form {
     display: grid;
-    grid-column-start: 3;
-    justify-items: end;
+    grid-column-start: 2;
+    justify-items: center;
 }
-.my-contacts h5 {
+.my-contacts h5,
+.contact-form h5 {
     font-size: 1.5rem;
     color: #0F62FE;
 }
@@ -511,7 +512,7 @@ img {vertical-align: middle;}
     border: none;
     border-bottom: 3px solid #0F62FE;
     width: 80%;
-    margin-top: 3px;
+    margin-top: 10px;
     font-size: 1.2rem;
     margin: 10px 0;
     background-color: rgb(231, 231, 231);

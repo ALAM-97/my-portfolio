@@ -141,6 +141,17 @@
     .text a {
         font-size: 1.2rem; 
     }
+    /* CONTACT FORM */
+    .contact-me {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .contact-form {
+        display: grid;
+    }
+    textarea {
+        height: 70px;
+    }
 }
 
 @media screen and (max-width: 830px) {
@@ -261,6 +272,23 @@
     .text a {
         font-size: .9rem; 
     }
+    /* CONTACT ME */
+    .contact-me {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .my-contacts {
+        grid-row-start: 1;
+        justify-self: center;
+    }
+    .contact-form {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        justify-self: center;
+        margin-top: 20px;
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -338,6 +366,14 @@
     /* PORTFOLIO */
     .text a {
         font-size: .7rem; 
+    }
+    /* CONTACT ME */
+    .contact-form {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        justify-self: center;
+        margin-top: 20px;
+        width: 100%;
     }
 }
 
