@@ -515,7 +515,7 @@ img {vertical-align: middle;}
     margin-top: 10px;
     font-size: 1.2rem;
     margin: 10px 0;
-    background-color: rgb(231, 231, 231);
+    background-color: transparent;
 }
 .contact-form input:focus,
 textarea:focus {
@@ -530,7 +530,7 @@ textarea {
     margin-top: 3px;
     font-size: 1.2rem;
     margin: 10px 0;
-    background-color: rgb(231, 231, 231);
+    background-color: transparent;
     font-family: 'Montserrat', sans-serif;
     color: #757575;
     font-weight: 500;
