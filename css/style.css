@@ -8,11 +8,19 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    width: 75%;
-    margin: auto;
     background-color: rgb(231, 231, 231);
     color: rgb(20, 20, 20);
-    margin-bottom: 100px;  /* debug */
+}
+.wrapper-75 {
+    margin: auto;
+    width: 75%;
+}
+footer {
+    background-color: #0F62FE;
+    height: 300px; /* debug */
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
 }
 .dark-mode {
     background-color: rgb(20, 20, 20);
@@ -534,9 +542,13 @@ textarea {
     font-family: 'Montserrat', sans-serif;
     color: #757575;
     font-weight: 500;
+    resize: none;
 }
 .contact-form .btn {
     grid-column-start: 1;
 }
+
+/* FOOTER */
+
 
 
