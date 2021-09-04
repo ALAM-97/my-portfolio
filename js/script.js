@@ -4,6 +4,34 @@ function darkMode() {
     element.classList.toggle("dark-mode");
 }
 
+// SKILLS
+
+var frontend = document.getElementById("frontend-skills");
+var backend = document.getElementById("backend-skills");
+var design = document.getElementById("design-skills");
+
+frontend.addEventListener("click",
+    function () {
+        document.getElementById("fe-skills").classList.toggle("active");
+        document.getElementById("arrow-up").classList.toggle("open");
+        document.getElementById("arrow-down").classList.toggle("open");
+    }
+);
+backend.addEventListener("click",
+    function () {
+        document.getElementById("be-skills").classList.toggle("active");
+        document.getElementById("arrow-up").classList.toggle("open");
+        document.getElementById("arrow-down").classList.toggle("open");
+    }
+);
+design.addEventListener("click",
+    function () {
+        document.getElementById("d-skills").classList.toggle("active");
+        document.getElementById("arrow-up").classList.toggle("open");
+        document.getElementById("arrow-down").classList.toggle("open");
+    }
+);
+
 // ESPERIENZE
 function mostraIstruzione() {
     document.getElementById("tab-istruzione").style.display="block";

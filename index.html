@@ -55,7 +55,7 @@
                     <a class="btn" href="">Contattami</a>
                 </div>
                 <div class="hero-right">
-                   <img src="img/img-portfolio.png" alt="">
+                <img src="img/img-portfolio.png" alt="">
                 </div>
             </section>
 
@@ -108,15 +108,15 @@
                     <!-- FRONTEND ACCORDION -->
                     <div class="accordion front">
                         <div class="accordion-item" id="frontend-skills">
-                            <a class="accordion-link" href="#frontend-skills">
+                            <div class="accordion-link">
                                 <div>
                                     <i class="fas fa-code"></i>
                                     Front-End Developer
                                 </div>
-                                <i class="fas fa-angle-up"></i>
-                                <i class="fas fa-angle-down"></i>
-                            </a>
-                            <div class="skills-stats">
+                                <i id="arrow-up" class="fas fa-angle-up"></i>
+                                <i id="arrow-down" class="fas fa-angle-down"></i>
+                            </div>
+                            <div id="fe-skills" class="skills-stats">
                                 <div class="skills-stats-container">
                                     <div class="stats">
                                         <div>HTML</div>
@@ -150,20 +150,20 @@
                             </div>
                         </div>
                     </div>
-
+                
                     <!-- BACKEND ACCORDION -->
                     <div class="accordion back">
                         <div class="accordion-item" id="backend-skills">
-                            <a class="accordion-link" href="#backend-skills">
+                            <div class="accordion-link">
                                 <div>
                                     <i class="fas fa-server"></i>
                                     Back-End Developer
                                 </div>
                                 
-                                <i class="fas fa-angle-up"></i>
-                                <i class="fas fa-angle-down"></i>
-                            </a>
-                            <div class="skills-stats">
+                                <i id="arrow-up" class="fas fa-angle-up"></i>
+                                <i id="arrow-down" class="fas fa-angle-down"></i>
+                            </div>
+                            <div id="be-skills" class="skills-stats">
                                 <div class="skills-stats-container">
                                     <div class="stats">
                                         <div>PHP</div>
@@ -201,16 +201,16 @@
                     <!-- DESIGN ACCORDION -->
                     <div class="accordion design">
                         <div class="accordion-item" id="design-skills">
-                            <a class="accordion-link" href="#design-skills">
+                            <div class="accordion-link">
                                 <div>
                                     <i class="fas fa-palette"></i>
                                     Designer
                                 </div>
                                 
-                                <i class="fas fa-angle-up"></i>
-                                <i class="fas fa-angle-down"></i>
-                            </a>
-                            <div class="skills-stats">
+                                <i id="arrow-up" class="fas fa-angle-up"></i>
+                                <i id="arrow-down" class="fas fa-angle-down"></i>
+                            </div>
+                            <div id="d-skills" class="skills-stats">
                                 <div class="skills-stats-container">
                                     <div class="stats">
                                         <div>Photoshop</div>
@@ -252,7 +252,7 @@
                     </div>
                     <div id="lavoro-active" class="lavoro" onclick="mostraLavoro()">
                         <i class="fas fa-briefcase"></i>
-                         Lavoro
+                        Lavoro
                     </div>
                 </div>
                 <div id="tab-istruzione">
