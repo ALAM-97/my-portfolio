@@ -12,21 +12,21 @@ var design = document.getElementById("design-skills");
 
 frontend.addEventListener("click",
     function () {
-        document.getElementById("fe-skills").classList.toggle("active");
+        document.getElementById("fe-skills").classList.toggle("open");
         document.getElementById("arrow-up").classList.toggle("open");
         document.getElementById("arrow-down").classList.toggle("open");
     }
 );
 backend.addEventListener("click",
     function () {
-        document.getElementById("be-skills").classList.toggle("active");
+        document.getElementById("be-skills").classList.toggle("open");
         document.getElementById("arrow-up").classList.toggle("open");
         document.getElementById("arrow-down").classList.toggle("open");
     }
 );
 design.addEventListener("click",
     function () {
-        document.getElementById("d-skills").classList.toggle("active");
+        document.getElementById("d-skills").classList.toggle("open");
         document.getElementById("arrow-up").classList.toggle("open");
         document.getElementById("arrow-down").classList.toggle("open");
     }

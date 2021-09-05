@@ -241,7 +241,7 @@ header ul:last-child {
     display: none;
     overflow: hidden;
 }
-.skills-stats.active {
+.skills-stats.open {
     display: block;
 }
 .stats {
