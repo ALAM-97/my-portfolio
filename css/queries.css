@@ -17,7 +17,7 @@
     }
     /* HEADER */
     header li {
-       font-size: 1.1rem;
+        font-size: 1.1rem;
     }
     /* HERO */
     .hero-center h1 {
@@ -363,6 +363,14 @@
     .accordion-link {
         font-size: .9rem;
     }
+    /* ESPERIENZE  */
+    .istruzione,
+    .lavoro {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #0F62FE;
+    font-weight: 500;
+}
     /* PORTFOLIO */
     .text a {
         font-size: .7rem; 
@@ -388,6 +396,6 @@
 }
 
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+    .prev, .next,.text {font-size: 11px}
 }
 
